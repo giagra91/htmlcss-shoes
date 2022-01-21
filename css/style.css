@@ -1,7 +1,7 @@
 /* RESET */
 *{
     box-sizing: border-box;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -19,51 +19,45 @@ body{
 }
 
 /* CLEARFIX */
-.clearfix::after{
+/* .clearfix::after{
     content: "";
     display: table;
     clear: both;
-}
-
-/* FLOAT */
-/* .float-left{
-    position: fixed;
 } */
 
-.top-links{
-    position: fixed;
-    width: 15vw;
-    height: 10vh;
-    top: 2rem;
-    right: .2rem;
-    z-index: 2;
-}
-
-header.top-links>div{
-    display: inline;
-    font-size: 1rem;
+.top-links div{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     background-color: lightgray;
-    margin-left: 1.6rem;
-    padding: .8rem;
-    border-radius: 15px;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+    margin-left: 20px;
 }
 
-.first-container{
+.red-container{
     background-color: rgb(254, 23, 4);
     width: 100vw;
-    height: 100vh;
+    height: 100vh; 
 }
 
-.second-container{
+.green-container{
     background-color: rgb(28, 135, 33);
     width: 100vw;
     height: 100vh;
 }
 
-.third-container{
+.yellow-container{
     background-color: rgb(248, 237, 15);
     width: 100vw;
     height: 100vh;
+}
+
+#third-image-text{
+    color: rgb(28, 135, 33);
+
 }
 
 .central-container{
@@ -74,7 +68,7 @@ header.top-links>div{
     transform: translate(-50%, -50%);
 }
 
-div.central-container span{
+div.central-container h1{
     font-weight: 800;
     text-transform: uppercase;
     font-size: 3rem;
@@ -83,7 +77,9 @@ div.central-container span{
     letter-spacing: .65rem;
 }
 
-#third-image-text{
-    color: rgb(28, 135, 33);
-
+.top-links{
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    z-index: 2;
 }

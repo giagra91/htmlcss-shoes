@@ -7,6 +7,7 @@
 
 body{
     font-family: 'Anton', sans-serif;
+    width: 100vw;
 }
 
 .relative{
@@ -25,8 +26,26 @@ body{
 }
 
 /* FLOAT */
-.ft-left{
-    float: left;
+/* .float-left{
+    position: fixed;
+} */
+
+.top-links{
+    position: fixed;
+    width: 15vw;
+    height: 10vh;
+    top: 2rem;
+    right: .2rem;
+    z-index: 2;
+}
+
+header.top-links>div{
+    display: inline;
+    font-size: 1rem;
+    background-color: lightgray;
+    margin-left: 1.6rem;
+    padding: .8rem;
+    border-radius: 15px;
 }
 
 .first-container{

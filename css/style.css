@@ -1,0 +1,18 @@
+/* RESET */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* CLEARFIX */
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* FLOAT */
+.ft-left{
+    float: left;
+}
